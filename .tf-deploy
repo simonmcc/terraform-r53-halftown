@@ -1,0 +1,8 @@
+# generic tf-deploy.sh config file, derive required
+# environment variables from the PWD
+
+TF_ENVIRONMENT=terraform-r53-halftown
+TF_REMOTESTATE_BACKEND="S3"
+TF_REMOTESTATE_BUCKET="${TF_ENVIRONMENT}"
+TF_BACKEND_KEY="${TF_ENVIRONMENT}"
+TF_VAR_FILE="terraform.tfvars"
